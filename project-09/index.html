@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pseudo Selectors</title>
+</head>
+<style>
+    p::first-line{
+        font-weight: bold;
+        color: brown;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+    }
+    p.about::first-line{
+        color: green;
+    }
+    p::after{
+        content: "";
+        display: block;
+        background-color: yellow;
+        padding: 10px;
+        
+    }
+    ul li{
+        padding: 10px;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    ul li:first-child{
+        background-color: red;
+    }
+    ul li:last-child{
+        background-color: aquamarine;
+    }
+    ul li:nth-of-type(even){
+        border: 2px solid green;
+    }
+    a{
+        padding: 5px 8px;
+        text-decoration: none;
+        display: block;
+        width: 80px;
+        border: 1px solid gray;
+        margin-bottom: 10px;
+    }
+    a:link{
+        color: rgb(9, 51, 37);
+        
+    }
+    
+    a:visited{
+        color:darkred;
+    }
+    a:hover{
+        color: chartreuse;
+        background-color: blue;
+    }
+    a:active{
+        color: darkcyan;
+    }
+</style>
+<body style="margin-bottom: 200px;">
+    <h1>Pseudo Selectors</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aliquam nobis magnam iste, vel quisquam aut, totam ducimus eos, in numquam nisi esse deleniti architecto. Eveniet minima aspernatur id itaque eligendi ut minus nostrum dolores nemo explicabo. Corporis non, distinctio illo optio libero eum voluptatem ut molestiae dignissimos porro. Delectus nihil est eveniet, assumenda natus culpa earum provident aliquam aspernatur.</p>
+
+    <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quia quaerat non iusto. Aliquid ut natus, dolor quis dolorem quas id obcaecati harum, tempore, eum qui voluptas aspernatur. Dicta, ut.</p>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+        <li>five</li>
+    </ul>
+    <a href="blog.html">a:link</a>
+    <a href="#">a:visited</a>
+    <a href="#">a:hover</a>
+    <a href="#">a:active</a>
+    <br>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo magnam dolores mollitia ea quod blanditiis aperiam enim soluta quaerat rem.</div>
+  </body>
+</body>
+</html>

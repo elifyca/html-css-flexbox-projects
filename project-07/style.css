@@ -78,16 +78,20 @@ header {
     font-size: large;
 }
 
-.flex-container {
+ .flex-container {
     display: flex;
 }
 
 .flex-container {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
     flex-direction: column;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse; */
+    border: 2px solid gray;
+    /* margin-right: 20px ;
+    margin-left: 150px; */
+    margin: 0px 50px 100px 150px;
 }
 
 .flex-child {
@@ -97,7 +101,8 @@ header {
     width: 300px;
     height: 200px;
     margin-top: 50px;
-    overflow: scroll;  
+    overflow: scroll; 
+    border-style: outset; 
     
     
     
@@ -110,4 +115,4 @@ header {
 .img-picture{
     width: 16px;
     height: 5px;
-}
+} */
